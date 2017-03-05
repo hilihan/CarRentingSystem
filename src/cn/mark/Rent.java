@@ -42,12 +42,12 @@ public class Rent {
 	 */
 	public static void showRentList() {
 		System.out.println("您可租车的类型及其价目表：");
-		System.out.println("\t序号       汽车名称                 租金                        容量");
+		System.out.println("\t序号\t汽车名称\t租金\t容量");
 		for( int i = 0; i < vehicles.length; i++ ){
-			System.out.print("\t  "+(i+1)+".");
-			System.out.print("\t        "+vehicles[i].getName());
-			System.out.print("\t        "+vehicles[i].getPrice());
-			System.out.println("\t       "+vehicles[i].getCapacity());
+			System.out.print("\t"+(i+1)+".");
+			System.out.print("\t"+vehicles[i].getName());
+			System.out.print("\t"+vehicles[i].getPrice());
+			System.out.println("\t"+vehicles[i].getCapacity());
 		}
 	}
 	
